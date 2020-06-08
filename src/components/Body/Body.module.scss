@@ -1,0 +1,13 @@
+@import '../../style/variables';
+
+.body {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: $site-width;
+    display: flex;
+    flex-direction: column;
+}

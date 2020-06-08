@@ -1,0 +1,55 @@
+@import './variables';
+
+@font-face {
+    font-family: Quantico;
+    src: url('../assets/fonts/Quantico-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Quantico;
+    src: url('../assets/fonts/Quantico-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Quantico;
+    src: url('../assets/fonts/Quantico-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Quantico;
+    src: url('../assets/fonts/Quantico-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-family: Quantico;
+}
+
+p, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+a {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}

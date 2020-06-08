@@ -1,0 +1,64 @@
+@import '../../style/variables';
+
+.item {
+    display: flex;
+    position: relative;
+
+    .title {
+        font-size: 22px;
+        color: #fff;
+        padding: 20px;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+
+    .dropDown {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 55px;
+
+        &::before {
+            content: '';
+            border: solid transparent;
+            border-width: 8px;
+            border-bottom-color: $primary-color;
+            align-self: flex-start;
+            margin-left: 15px;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: $primary-color;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        li {
+            display: flex;
+            min-width: 176px;
+        
+            a {
+                padding: 5px 20px;
+                flex: 1;
+
+                &:hover {
+                    background-color: $primary-light;
+                    color: #fff;
+                }
+            }
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $primary-dark;
+            }
+        }
+    }
+
+    &:hover .dropDown {
+        display: flex;
+    }
+}
