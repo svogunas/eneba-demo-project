@@ -4,3 +4,9 @@
     align-self: flex-end;
     display: flex;
 }
+
+@media (max-width: $site-width) {
+    .wrapper {
+        display: none;
+    }
+}

@@ -1,0 +1,15 @@
+@import '../../style/variables';
+
+.wrapper {
+    display: flex;
+    background: linear-gradient(90deg, rgba(240,238,242,1) 0%, rgba(215,212,217,1) 50%, rgba(240,238,242,1) 100%);
+    padding: 20px;
+
+    p {
+        flex: 1;
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+}

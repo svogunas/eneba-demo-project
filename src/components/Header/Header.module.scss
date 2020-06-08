@@ -10,10 +10,24 @@
     display: flex;
 }
 
-.headerWrapper {
+.wrapper {
     max-width: $site-width;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+@media (max-width: $site-width) {
+    .cover {
+        height: auto;
+        position: fixed;
+    }
+
+    .wrapper {
+        padding: 10px 20px;
+        img {
+            width: 200px;
+        }
+    }
 }

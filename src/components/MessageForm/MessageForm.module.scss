@@ -1,2 +1,54 @@
 @import '../../style/variables';
 
+.wrapper {
+    padding: 20px;
+    border: 1px solid $primary-color;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-radius: 5px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        label {
+            color: $primary-color;
+            margin-bottom: 6px;
+        }
+
+        input {
+            font-size: 14px;
+        }
+
+        textarea {
+            font-size: 14px;
+            flex: 1;
+        }
+
+        input,
+        textarea {
+            margin-bottom: 20px;
+            padding: 8px 12px;
+            border: 1px solid $border-color;
+            box-shadow: inset 0px 0px 3px 0px rgba(0,0,0,0.5);
+            border-radius: 5px;
+        }
+
+        button {
+            font-size: 22px;
+            font-family: Quantico;
+            color: #fff;
+            padding: 6px 0;
+            border: none;
+            border-radius: 8px;
+            background-color: $primary-color;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $primary-dark;
+            }
+        }
+    }
+}

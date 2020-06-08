@@ -1,0 +1,36 @@
+@import '../../style/variables';
+
+.wrapper {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.sideBar {
+    width: 265px;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoWrapper {
+    display: flex;
+    flex-direction: column;
+
+    .infoTitle {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #000;
+        margin-bottom: 20px;
+
+        h2 {
+            font-size: 22px;
+        }
+    }
+
+    .infoText {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

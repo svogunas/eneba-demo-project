@@ -1,2 +1,21 @@
 @import '../../style/variables';
 
+.wrapper {
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid $border-color;
+    background-color: #fff;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.children p:not(:last-child) {
+    margin-bottom: 30px;
+}
