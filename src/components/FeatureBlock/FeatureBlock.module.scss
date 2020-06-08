@@ -13,3 +13,14 @@
         }
     }
 }
+
+@media (max-width: $site-width) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    p:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

@@ -19,3 +19,23 @@
 .children p:not(:last-child) {
     margin-bottom: 30px;
 }
+
+@media (max-width: $site-width) {
+    .wrapper {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .children p {
+        font-size: 14px;
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+}

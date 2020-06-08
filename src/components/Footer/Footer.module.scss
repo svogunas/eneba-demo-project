@@ -34,4 +34,12 @@
     }
 }
 
-// 14px
+@media (max-width: $site-width) {
+    .linkWrapper {
+        display: none;
+    }
+
+    .footerWrapper {
+        padding: 20px;
+    }
+}

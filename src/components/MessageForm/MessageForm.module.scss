@@ -52,3 +52,9 @@
         }
     }
 }
+
+@media (max-width: $site-width) {
+    .wrapper form textarea {
+        min-height: 100px; 
+    }
+}
